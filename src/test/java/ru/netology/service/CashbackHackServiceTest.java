@@ -33,6 +33,15 @@ class CashbackHackServiceTest {
         Assert.assertEquals(actual, expected);
 
     }
+    @Test
+    public void aboveBoundaryButDividableByBoundary() {
+        CashbackHackService service = new CashbackHackService();
+
+        int actual = service.remain(10000);
+        int expected = 0;
+        Assert.assertEquals(actual, expected);
+
+    }
 
 
 }
