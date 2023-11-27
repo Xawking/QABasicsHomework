@@ -1,7 +1,8 @@
 package ru.netology.service;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 class CashbackHackServiceTest {
     @Test
@@ -33,6 +34,7 @@ class CashbackHackServiceTest {
         Assert.assertEquals(actual, expected);
 
     }
+
     @Test
     public void aboveBoundaryButDividableByBoundary() {
         CashbackHackService service = new CashbackHackService();
